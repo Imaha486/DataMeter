@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@drawable/widget_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/w_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-- GB"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:includeFontPadding="false" />
+        <TextView
+            android:id="@+id/w_sub"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="今日 --"
+            android:textColor="#E0E0E0"
+            android:textSize="9sp"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="0.9"
+            android:includeFontPadding="false" />
+        <TextView
+            android:id="@+id/w_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="2dp"
+            android:text="⟳"
+            android:textColor="#80CBC4"
+            android:textSize="14sp"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/w_progress"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="4dp"
+        android:max="1000"
+        android:progress="0" />
+</LinearLayout>

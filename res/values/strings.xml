@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">データ通信量メーター</string>
+    <string name="widget_name">モバイル通信量</string>
+    <string name="widget_desc">今月のモバイルデータ通信量を表示します</string>
+</resources>
